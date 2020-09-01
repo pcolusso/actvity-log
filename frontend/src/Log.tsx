@@ -1,5 +1,6 @@
 import React from 'react'
 import LogEntry from './structures'
+import LogView from './LogView'
 
 export default function Log() {
     const entries = Array.from(Array(20).keys()).map(id =>  { return({at: new Date(), id, contents: "Test Entry" }) } )
@@ -11,9 +12,3 @@ export default function Log() {
         </div>
     )
 }
-
-function LogView({log} : {log: LogEntry}) {
-    return <h3>
-        {log.at.toUTCString()} | {log.contents}
-    </h3>
-}  

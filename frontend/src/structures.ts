@@ -1,11 +1,8 @@
 import Log from "./Log"
-
-
-
 type LogEntry = {
     at: Date,
     contents: string,
-    id: Number
+    id: number
 }
 
 export default LogEntry

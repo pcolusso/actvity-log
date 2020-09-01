@@ -48,3 +48,9 @@ body {
   width: 100%;
   height: 4em;
 }
+
+.LogView form input {
+  background: transparent;
+  border: none;
+  outline: none;
+}
